@@ -1,0 +1,158 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgb(215, 215, 215);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.break {
+    width: 100%;
+}
+
+.break-p {
+    width: 100%;
+}
+
+.painting {
+    width: 75%;
+    background-color: #fff;
+    border: 10px solid rgb(182, 182, 182);
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+h1,.p-info {
+    font-weight: 800;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(8, 8, 8);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.paint {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.paint-zone {
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+}
+
+.but-color-green, .but-color-red, .but-color-blue, .but-color-black {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(116, 93, 93);
+    border-radius: 50%;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.button-clear {
+    width:  100%;
+    height: 40px;
+    margin-top: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-style: oblique;
+} 
+
+.button-clear:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.but-color-green {
+    background-color: green;
+}
+
+.but-color-red {
+    background-color: red;
+}
+
+.but-color-blue {
+    background-color: blue;
+}
+
+.but-color-black {
+    background-color: black;
+}
+
+.but-color-green:hover {
+    background-color: rgb(0, 161, 0);
+}
+
+.but-color-red:hover {
+    background-color: rgb(252, 17, 17);
+}
+
+.but-color-blue:hover {
+    background-color: rgb(18, 18, 253);
+}
+
+.but-color-black:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+.otvet {
+    font-weight: 900;
+}
+
+.borderr {
+    border: 10px solid rgb(19, 207, 35);
+    transition: border 1s;
+}
+
+@media (min-width: 0) and (max-width: 250px) {
+    .p-info{
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media (min-width: 1620px) and (max-width: 20000px) {
+    .paint-zone {
+        height: 700px;
+    }
+}
